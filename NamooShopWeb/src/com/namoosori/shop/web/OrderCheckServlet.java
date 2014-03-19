@@ -44,7 +44,7 @@ public class OrderCheckServlet extends HttpServlet {
 			writer.println("<head>");
 			writer.println("<meta charset='utf-8'>");
 			writer.println("<title>주문화면</title>");
-			writer.println("<link href='confirm.css' rel='stylesheet' type='text/css' />");
+			writer.println("<link href='./CSS/confirm.css' rel='stylesheet' type='text/css' />");
 			writer.println("</head>");
 			writer.println("<body>");
 			writer.println("<div id='orderCheck'>");

@@ -58,7 +58,7 @@ public class CompleteServlet extends HttpServlet {
 			writer.println("<html>");
 			writer.println("<head>");
 			writer.println("<title>주문 완료</title>");
-			writer.println("<link href='complete.css' rel='stylesheet' type ='text/css' />");
+			writer.println("<link href='./CSS/complete.css' rel='stylesheet' type ='text/css' />");
 			writer.println("</head>");
 			writer.println("<body>");
 			writer.println("<div id='complete'>");
