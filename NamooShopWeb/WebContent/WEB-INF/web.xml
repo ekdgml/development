@@ -2,16 +2,14 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>NamooShopWeb</display-name>
   
-  <context-param>
-  <description>사용자1</description>
-  <param-name>bookmania</param-name>
-  <param-value>1234</param-value> 
-  </context-param>
+  <servlet>
+  <servlet-name>JoinResult</servlet-name>
+  <jsp-file>/join_result.jsp</jsp-file>
+  </servlet>
   
-  <context-param>
-  <description>사용자2</description>
-  <param-name>booklove</param-name>
-  <param-value>adsf</param-value> 
-  </context-param>
+  <servlet-mapping>
+  <servlet-name>JoinResult</servlet-name>
+  <url-pattern>/result</url-pattern>
+  </servlet-mapping>
   
 </web-app>
