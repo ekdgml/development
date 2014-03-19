@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>구구단</title>
+
+<script type="text/javascript">
+
+function printGugudan() {
+	//
+	var dan =document.getElementById("select_dan").value;
+	var results = "";
+	
+	for (var i = 1; i < 10; i++) {
+		results = results + dan + " * " + i + " = " + (dan*i);
+		results = results + "\n";
+	}
+	
+	document.getElementById("result").value = results;
+}
+
+</script>
+</head>
+<body>
+
+<h1>구구단</h1>
+
+<select id = "select_dan">
+<option value = "2">2</option>
+<option value = "3">3</option>
+<option value = "4">4</option>
+<option value = "5">5</option>
+<option value = "6">6</option>
+<option value = "7">7</option>
+<option value = "8">8</option>
+<option value = "9">9</option>
+</select> 
+단 <button onclick = "printGugudan();">출력</button> <br/>
+<textarea id = "result" rows = "10" cols = "30"></textarea>
+
+</body>
+</html>

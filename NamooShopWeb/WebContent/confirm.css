@@ -1,0 +1,79 @@
+body {
+	background: url(1.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+#orderCheck {
+	width: 600px;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+table {
+	border-collapse: collapse;
+	border-left: 1px solid #222;
+	border-bottom: 1px solid #222;
+	width: 600px;
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+
+
+td,th {
+	border-top: 1px solid #222;
+	border-right: 1px solid #222;
+	padding: 10px 25px;
+}
+
+thead {
+	background-color: rgb(216, 216, 216);
+}
+
+table2 {
+	text-align: right;
+}
+
+input[type=submit] {
+	margin-top: 20px;
+	position: relative;
+	left: 455px;
+	width: 80px;
+	font-size: 15px;
+}
+
+th {
+	text-align: center;
+}
+
+input[type=button] {
+	position: relative;
+	left: 450px;
+	width: 60px;
+	font-size: 15px;
+}
+
+h3 {
+	float: right;
+}
+
+#table1 {
+	width: 600px;
+}
+
+.price {
+	text-align: right;
+}
+
+.num {
+	text-align: center;
+}
+
+.name {
+	text-align: left;
+}
+#transfer {
+	padding-left : 20px;
+}
+#text {
+	width : 200px;
+}

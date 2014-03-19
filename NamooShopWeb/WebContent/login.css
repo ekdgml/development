@@ -1,0 +1,47 @@
+body {
+	background: url(1.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+#loginForm {
+	width: 350px;
+	margin-top: 30px;
+	margin-left: 30px;
+	
+}
+
+input[type=submit] {
+	float: right;
+	margin-top: 10px;
+	width: 80px;
+	font-size: 15px;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #222;
+	width: 350px;
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+
+tr,td,th {
+	border-top: 1px solid #222;
+	border-right: 1px solid #222;
+}
+
+th {
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+input[type=text] {
+	width: 200px;
+	margin-left: 15px;
+}
+
+input[type=password] {
+	width: 200px;
+	margin-left: 15px;
+}

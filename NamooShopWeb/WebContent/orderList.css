@@ -1,0 +1,57 @@
+body {
+	background: url(1.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+#orderList {
+	width: 600px;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+table {
+	border-collapse: collapse;
+	border-left: 1px solid #222;
+	border-bottom: 1px solid #222;
+	width: 600px;
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+
+td,th {
+	border-top: 1px solid #222;
+	border-right: 1px solid #222;
+	padding: 10px 25px;
+}
+
+thead {
+	background-color: rgb(216, 216, 216);
+}
+
+table2 {
+	text-align: right;
+}
+
+input[type=submit] {
+	margin-top: 20px;
+	float: right;
+	font-size: 15px;
+	width: 80px;
+}
+
+.price {
+	text-align: right;
+}
+
+th {
+	text-align: center;
+	padding-left: 50px;
+}
+
+.num {
+	text-align: center;
+}
+
+.name {
+	text-align: left;
+}
