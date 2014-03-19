@@ -1,6 +1,7 @@
 package com.namoosori.shop.web;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -29,12 +30,25 @@ public class ListBetweenCheck extends HttpServlet {
 		String address = req.getParameter("address");
 		if (orders != null && orders.length > 0 && address != null) {
 			//
+			req.setCharacterEncoding("utf-8");
 			RequestDispatcher dispatcher = req
 					.getRequestDispatcher("confirm.xhtml");
 			dispatcher.forward(req, resp);
 		} else {
 			//
-			resp.sendRedirect("orderList.xhtml");
+			//resp.sendRedirect("orderList.xhtml");
+			resp.setContentType("text/html");
+			PrintWriter writer = resp.getWriter();
+			writer.println("<html>");
+			writer.println("<head>");
+			writer.println("<script>");
+			writer.println("history.back();");
+			writer.println("</script>");
+			writer.println("</head>");
+			writer.println("<body>");
+			writer.println("</body>");
+			writer.println("</html>");
+
 		}
 	}
 

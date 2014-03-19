@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.namoosori.namooshop.domain.Order;
 import com.namoosori.namooshop.domain.Product;
 import com.namoosori.namooshop.service.facade.ProductService;
 import com.namoosori.namooshop.service.factory.NamooShopServiceFactory;
@@ -58,8 +57,6 @@ public class BookListServlet extends HttpServlet {
 		ProductService service = NamooShopServiceFactory.getInstance()
 				.getProductService();
 		List<Product> productsList = service.getAllProducts();
-		Order order = new Order();
-		
 		
 		for (Product product : productsList) {
 			writer.println("<tr>");
