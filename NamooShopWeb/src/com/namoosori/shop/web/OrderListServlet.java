@@ -36,14 +36,13 @@ public class OrderListServlet extends HttpServlet {
 		if (customer == null) {
 			resp.sendRedirect("login.xhtml");
 		} else {
-			resp.setContentType("text/html; charset=utf-8");
+			//resp.setContentType("text/html; charset=utf-8");
 
 			PrintWriter writer = resp.getWriter();
 			writer.println("<html>");
 			writer.println("<head>");
-			writer.println("<meta charset='utf-8'>");
 			writer.println("<title>주문화면</title>");
-			writer.println("<link href='./CSS/orderList.css' rel='stylesheet' type='text/css' />");
+			writer.println("<link href='./css/orderList.css' rel='stylesheet' type='text/css' />");
 			writer.println("</head>");
 			writer.println("<body>");
 			writer.println("<div id='orderList'>");

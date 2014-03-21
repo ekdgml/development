@@ -52,13 +52,13 @@ public class CompleteServlet extends HttpServlet {
 			OrderService orderService = NamooShopServiceFactory.getInstance().getOrderService();
 			orderService.order(order);
 			
-			resp.setContentType("text/html; charset=utf-8");
+			//resp.setContentType("text/html; charset=utf-8");
 
 			PrintWriter writer = resp.getWriter();
 			writer.println("<html>");
 			writer.println("<head>");
 			writer.println("<title>주문 완료</title>");
-			writer.println("<link href='./CSS/complete.css' rel='stylesheet' type ='text/css' />");
+			writer.println("<link href='./css/complete.css' rel='stylesheet' type ='text/css' />");
 			writer.println("</head>");
 			writer.println("<body>");
 			writer.println("<div id='complete'>");

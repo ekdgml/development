@@ -30,13 +30,13 @@ public class BookListServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		//
-		resp.setContentType("text/html; charset=utf-8");
+		//resp.setContentType("text/html; charset=utf-8");
 
 		PrintWriter writer = resp.getWriter();
 		writer.println("<html>");
 	      writer.println("<head>");
 	      writer.println("<title>상품목록</title>");
-	      writer.println("<link href='./CSS/bookList.css' rel='stylesheet' type ='text/css' />");
+	      writer.println("<link href='./css/bookList.css' rel='stylesheet' type ='text/css' />");
 	      writer.println("</head>");
 	      writer.println("<body>");
 	      writer.println("<div id='productlist'>");

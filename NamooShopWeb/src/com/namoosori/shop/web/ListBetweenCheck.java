@@ -30,7 +30,7 @@ public class ListBetweenCheck extends HttpServlet {
 		String address = req.getParameter("address");
 		if (orders != null && orders.length > 0 && address != null) {
 			//
-			req.setCharacterEncoding("utf-8");
+			//req.setCharacterEncoding("utf-8");
 			RequestDispatcher dispatcher = req
 					.getRequestDispatcher("confirm.xhtml");
 			dispatcher.forward(req, resp);

@@ -33,18 +33,18 @@ public class OrderCheckServlet extends HttpServlet {
 			throws ServletException, IOException {
 		//
 		Customer customer = (Customer) req.getSession().getAttribute("loginId");
-		req.setCharacterEncoding("utf-8");
+		//req.setCharacterEncoding("utf-8");
 		if (req.getSession().getAttribute("loginId") == null) {
 			resp.sendRedirect("login.xhtml");
 		} else {
-			resp.setContentType("text/html; charset=utf-8");
+			//resp.setContentType("text/html; charset=utf-8");
 
 			PrintWriter writer = resp.getWriter();
 			writer.println("<html>");
 			writer.println("<head>");
 			writer.println("<meta charset='utf-8'>");
 			writer.println("<title>주문화면</title>");
-			writer.println("<link href='./CSS/confirm.css' rel='stylesheet' type='text/css' />");
+			writer.println("<link href='./css/confirm.css' rel='stylesheet' type='text/css' />");
 			writer.println("</head>");
 			writer.println("<body>");
 			writer.println("<div id='orderCheck'>");
